@@ -1,0 +1,36 @@
+.clients {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    list-style: none;
+    fill: $svgColors;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $svgColors;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: $animationDuration;
+    transition-timing-function: $animationtimingfunction;
+    &:hover {
+      border: 1px solid $brandColor;
+      fill: $brandColor;
+      cursor: pointer;
+    }
+    @media (max-width: 767px) {
+      width: 46%;
+    }
+    @media (min-width: 767px) and (max-width: 1199px) {
+      width: 30%;
+    }
+  }
+}

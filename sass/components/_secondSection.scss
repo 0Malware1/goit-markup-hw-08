@@ -1,0 +1,50 @@
+.traits {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+.desc {
+  padding: 0;
+  &__element {
+    list-style: none;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      max-width: 47%;
+    }
+  }
+  &__icon-area {
+    background-color: $complimentaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100%;
+    height: 120px;
+    padding: 0;
+  }
+  &__title {
+    color: $mainTextColor;
+    font-weight: $fontWeightMain;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  &__text {
+    color: $secondaryTextColor;
+    text-align: justify;
+    font-weight: $fontWeightSecondary;
+    letter-spacing: 0.03em;
+  }
+}

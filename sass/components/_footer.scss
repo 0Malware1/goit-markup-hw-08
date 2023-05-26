@@ -1,0 +1,125 @@
+.footer {
+  background-color: $minorColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (max-width: 1199px) {
+  }
+  &__register {
+    @media (max-width: 1199px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 767px) {
+      justify-content: center;
+      gap: 60px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 767px) {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+    font-style: normal;
+
+    &__headquarters {
+      margin: 0;
+      color: $HighlightColor;
+      font-weight: $fontWeightSecondary;
+    }
+  }
+  .contacts--footer {
+    text-decoration: none;
+    color: #ffffff99;
+    &:hover {
+      color: $brandColor;
+    }
+  }
+  &__title {
+    color: $HighlightColor;
+    @media (max-width: 767px) {
+      display: block;
+    }
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+}
+.social-media {
+  &__item--footer {
+    background-color: #ffffff1a;
+    border-radius: 100%;
+    fill: $HighlightColor;
+    &:hover {
+      background-color: $brandColor;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+.form-register {
+  display: flex;
+  gap: 12px;
+  &__input {
+    background: none;
+    width: 358px;
+    height: 50px;
+    border: 1px solid #ffffff4d;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: justify-content;
+    color: #ffffff99;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    &:placeholder-shown {
+      color: #ffffff99;
+    }
+  }
+  &__send {
+    height: 50px;
+    width: 200px;
+    fill: $HighlightColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-size: $fontSizeSecondary;
+  }
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

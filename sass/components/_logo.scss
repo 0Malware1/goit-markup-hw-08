@@ -1,0 +1,20 @@
+.logo {
+  width: 145px;
+  height: 31px;
+  font-family: $logoFont;
+  font-weight: $fontWeightMain;
+  font-size: 26px;
+  color: $logoColor;
+  text-decoration: none;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationtimingfunction;
+  &__highlight {
+    color: $brandColor;
+  }
+  &:hover {
+    color: $brandColor;
+  }
+}
+.footer__logo {
+  color: $HighlightColor;
+}

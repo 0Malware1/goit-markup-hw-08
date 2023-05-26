@@ -1,0 +1,51 @@
+.hero {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
+  background-image: url(../images/main-background.jpg),
+    url(../images/ImgOverlay.png);
+
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/main-background@2x.jpg),
+        url(../images/ImgOverlay@2x.png);
+    }
+  }
+  @media (max-width: 768px) {
+    background-image: url(../images/main-background-mobile.png),
+      url(../images/ImgOverlay.png);
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    color: $HighlightColor;
+    text-align: center;
+    letter-spacing: 0.06em;
+    line-height: 60px;
+    margin: 0;
+    @media (max-width: 1200px) {
+      font-size: 26px;
+    }
+  }
+  &__button {
+    margin-top: 30px;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

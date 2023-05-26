@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    flex-grow: 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 46px;
+    list-style: none;
+  }
+  &__links {
+    color: $mainTextColor;
+    text-decoration: none;
+    transition-duration: $animationDuration;
+    transition-timing-function: $animationtimingfunction;
+    &:hover {
+      color: $brandColor;
+    }
+  }
+}
+.links--active {
+  color: $brandColor;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    left: 0;
+    top: 45px;
+    width: 53px;
+    height: 4px;
+    background: $brandColor;
+  }
+}
